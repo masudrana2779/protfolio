@@ -17,6 +17,12 @@ $( document ).ready(function() {
 	});
     
 
+    //js for header-menu-icon
+    $(".Clickicon").click(function(){
+		$(".sideSocialWrap").toggleClass("openMenu");
+	});
+    
+
     
     
     //js for scroll to section content
