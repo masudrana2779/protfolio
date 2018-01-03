@@ -124,6 +124,7 @@ $( document ).ready(function() {
     
     
     
+    
     // hide #go-top first
     $("#go-top").hide();
     // fade in #go-topp
@@ -173,8 +174,10 @@ $( document ).ready(function() {
 
 
 });*/
-
     
+    
+});
+
 
     //js for sticky menu
     $(window).scroll(function() {    
@@ -183,22 +186,15 @@ $( document ).ready(function() {
         
         var topCount = $(window).scrollTop();
         
-        console.log(topCount);
+        
 
-        if (topCount >= 90) {
-            $(".haeder-top").addClass("omc-sticky");
+        if (topCount >= 200) {
+            $(".sideSocialWrap").addClass("openMenu");
+            $("#go-top").fadeIn();
             
         } else {
-            $(".haeder-top").removeClass("omc-sticky");
+            $(".sideSocialWrap").removeClass("openMenu");
+            $("#go-top").fadeOut();
         }
         
     });
-    
-    
-    
-    
-    
-    
-  
-});
-
